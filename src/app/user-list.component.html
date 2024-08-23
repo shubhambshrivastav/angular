@@ -1,0 +1,16 @@
+<div class="user-list">
+    <h2>User List</h2>
+  
+    <!-- Input field for filtering by name -->
+    <input
+      type="text"
+      placeholder="Filter by name"
+      [(ngModel)]="filterQuery"
+    />
+  
+    <!-- Display the filtered list of users -->
+    <ul>
+      <li *ngFor="let user of filteredUsers">{{ user.name }}</li>
+    </ul>
+  </div>
+  
